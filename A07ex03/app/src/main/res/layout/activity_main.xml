@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5CA3DC"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:title="Floating Action Button"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:titleTextColor="#FFFCFC" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabNavegador"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:ellipsize="middle"
+            android:foregroundGravity="center"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:collapsedSize="60dp"
+            app:icon="@android:drawable/ic_menu_search"
+            app:iconGravity="textStart"
+            app:iconPadding="2dp"
+            app:iconSize="40dp"
+            app:iconTintMode="screen"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.Material3.Button" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabChamadas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:ellipsize="middle"
+            android:foregroundGravity="center"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:icon="@android:drawable/ic_menu_call"
+            app:iconGravity="textStart"
+            app:iconPadding="2dp"
+            app:iconSize="40dp"
+            app:iconTintMode="screen"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.Material3.Button"
+            app:shapeAppearanceOverlay="@android:style/Widget.Button" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:ellipsize="middle"
+            android:foregroundGravity="center"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:icon="@android:drawable/ic_dialog_email"
+            app:iconGravity="textStart"
+            app:iconPadding="2dp"
+            app:iconSize="40dp"
+            app:iconTintMode="screen"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.Material3.Button" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabSMS"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:ellipsize="middle"
+            android:foregroundGravity="center"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:icon="@android:drawable/stat_notify_chat"
+            app:iconGravity="textStart"
+            app:iconPadding="2dp"
+            app:iconSize="40dp"
+            app:iconTintMode="screen"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.Material3.Button" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
